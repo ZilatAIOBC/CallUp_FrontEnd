@@ -1,8 +1,0 @@
-.auth-page {
-  /* Set background properties */
-  background-image: url("../../utils/Images/auth-bg.jpeg"); /* Replace with your image path */
-  background-size: cover; /* Adjusts the background image size */
-  background-repeat: no-repeat;
-  background-position: center;
-  /* Other styles like background position, repeat, etc., can be added as needed */
-}

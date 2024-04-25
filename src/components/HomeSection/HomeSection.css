@@ -1,9 +1,0 @@
-.home-page {
-  /* Set background properties */
-  background-image: url("../../utils/Images/home-bg.jpg"); /* Replace with your image path */
-  /* background-size: contain; */
-  background-repeat: no-repeat;
-  background-position: top;
-
-  /* Other styles like background position, repeat, etc., can be added as needed */
-}
