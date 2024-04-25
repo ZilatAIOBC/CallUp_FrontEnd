@@ -1,0 +1,66 @@
+/* .gradient-text {
+  font-size: 72px;
+  background: linear-gradient(
+    280.91deg,
+    #b86bd3 19.26%,
+    #df947c 31.33%,
+    #decb88 46.87%,
+    #a6df79 78.28%,
+    #80dcc0 90.96%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#navbar a.active {
+  background: #a78bfa;
+  color: black;
+  border-radius: 9999px;
+  padding: 15px 10px 15px 10px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  -o-border-radius: 9999px;
+} */
+
+.aai-gradient-outline-btn {
+  /* padding: 10px 0 10px 0; */
+  /* margin: 10px 0px 0px 0px; */
+  color: var(--white);
+  position: relative;
+  display: inline-block;
+  border-radius: 30px;
+  /* font-size: 18px; */
+  transition: all 0.3s;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.aai-gradient-outline-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 1px;
+  background: linear-gradient(137deg, #80fcf0 0%, #ac5dfa 100%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.aai-gradient-outline-btn:hover::after {
+  width: 100%;
+}
+.aai-gradient-outline-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(137deg, #80fcf0 0%, #ac5dfa 100%);
+  transition: all 0.35s;
+  border-radius: 30px;
+  z-index: -1;
+}

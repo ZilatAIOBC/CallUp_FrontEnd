@@ -1,0 +1,8 @@
+.cta-bg {
+  /* Set background properties */
+  background-image: url("../../utils/Images/bg/cta-bg.jpeg"); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Other styles like background position, repeat, etc., can be added as needed */
+}
