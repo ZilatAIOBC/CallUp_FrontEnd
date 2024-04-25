@@ -1,0 +1,14 @@
+.gradient-text {
+  /* font-size: 72px; */
+  background: linear-gradient(
+    280.91deg,
+    #b86bd3 19.26%,
+    #df947c 31.33%,
+    #decb88 46.87%,
+    #a6df79 78.28%,
+    #80dcc0 90.96%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

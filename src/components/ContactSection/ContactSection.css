@@ -1,0 +1,71 @@
+.aai-contact-widget {
+  border-radius: 12px;
+  position: relative;
+  /* width: 465px; */
+}
+.aai-contact-widget::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(137deg, #80fcf0 0%, #efce85 52.6%, #ac5dfa 100%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.aai-contact-widget-inner {
+  padding: 20px 30px;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.aai-contact-widget-title {
+  font-size: var(--text-2xl);
+  margin-bottom: 15px;
+  color: var(--white);
+  font-weight: var(--font-bold);
+}
+.aai-contact-address {
+  font-size: var(--text-xl);
+  color: var(--white);
+}
+.aai-form-input {
+  position: relative;
+  margin-bottom: 30px;
+}
+.aai-form-input .form-control {
+  border-radius: 28px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #747681;
+  color: var(--white);
+}
+.aai-form-input .form-control:focus {
+  border-color: var(--interface-4);
+}
+.aai-form-input .form-control.text-area {
+  min-height: 240px;
+  border-radius: 12px;
+  padding: 16px 20px;
+  resize: none;
+}
+.aai-form-input .form-control::placeholder {
+  color: var(--interface-2);
+}
+.aai-form-input-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.aai-form-input label {
+  color: var(--white);
+  font-size: var(--text-base);
+  margin-left: 10px;
+}
+.aai-contact-support {
+  font-size: var(--text-xl);
+  color: var(--interface-2);
+}

@@ -1,0 +1,45 @@
+/* Define the gradient border style */
+.gradient-border {
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+      280.91deg,
+      #b86bd3 19.26%,
+      #df947c 31.33%,
+      #decb88 46.87%,
+      #a6df79 78.28%,
+      #80dcc0 90.96%
+    )
+    1;
+  border-image-slice: 1;
+}
+
+/* Apply the gradient border style to the form container */
+.form-container {
+  padding: 20px;
+  width: fit-content; /* Adjust width as needed */
+  /* Ensure the content doesn't extend the container's rounded corners */
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+      280.91deg,
+      #b86bd3 19.26%,
+      #df947c 31.33%,
+      #decb88 46.87%,
+      #a6df79 78.28%,
+      #80dcc0 90.96%
+    )
+    1;
+  border-image-slice: 1;
+}
+
+/* Apply border-radius to the wrapper container */
+.form-wrapper {
+  border-radius: 20px;
+  /*Applyborder-radiusof1000px*/
+  overflow: hidden;
+  /*Clipthecontentinsidetofittheroundedcorners*/
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
